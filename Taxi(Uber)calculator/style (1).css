@@ -1,0 +1,185 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 15px;
+    text-align: center;
+    background-image: url("pexels-tim-samuel-5835449.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header
+{
+margin: auto;
+width: 100%;
+max-width: 1000px;
+}
+
+#logo
+{
+    height: 150px;
+}
+
+main
+{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.information {
+    margin: auto;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: pink;
+    box-shadow: 0px 3px 10px salmon;
+
+}
+
+.results {
+    margin: auto;
+    margin-top: 25px;
+    width: 30%;
+    float: right;
+    display: none;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 0 15px 15px 0;
+    background-color:salmon;
+    box-shadow: 0px 3px 10px pink;    
+}
+
+h1 
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 22px;
+    color:purple;
+    text-shadow: 1px 1px 5px blueviolet;
+}
+h2
+{
+margin: auto;
+margin-top: 1em;
+font-family: Arial;
+font-weight: bold;
+font-size: 16px;
+color:darkorchid;
+text-shadow: 0px 3px 5px fuchsia;
+}
+
+p
+{
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14;
+    color: palevioletred;
+    line-height: 1.5;
+}
+
+.p_result
+{
+margin: auto;
+font-family: Arial;
+font-weight: bold;
+font-size: 12px;
+color:darkorchid;
+line-height: 1.5;
+}
+
+.p_result_person
+{
+margin: auto;
+font-family: Arial;
+font-weight: bold;
+font-size: 12px;
+color:darkorchid;
+line-height: 1.0;
+}
+
+small
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color:plum;
+    vertical-align: 2px;
+}
+
+#small_yes
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color:rgb(87, 13, 87);
+    vertical-align: 2px;
+}
+
+input
+{
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+input:valid
+{
+border: #800000 solid 1px;
+box-shadow: 1px 1px 5px #ff0000;
+}
+
+select
+{
+    font-family: Arial;
+    font-weight: normal;
+    text-align: center;
+    text-align-last: center;
+}
+
+button
+{
+ width: 100px;
+ height: 40px;
+ border: 2px solid black;
+ border-radius: 15px;
+ background-color: white;
+ box-shadow: 0px 3px 10px pink;
+}
+
+#p_button
+{
+margin: auto;
+font-family: Arial;
+font-weight: bold;
+font-size: 16px;
+color:rgb(87, 13, 87);
+}
+
+footer
+{
+margin: auto;
+width: 100px;
+max-width: 1000px;
+}
+
+#p_footer 
+{
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 10px;
+    color:rgb(224, 24, 224);
+}
+

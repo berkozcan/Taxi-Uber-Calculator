@@ -1,0 +1,82 @@
+<footer>
+<pid="p_footer"> BERK ÖZCAN STUDENT NUMBER:55850</p>
+</footer>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Calculator</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="logo-uber-antiga-1536.png">
+        </a>
+    </header>
+    <link rel="stylesheet" href="style (1).css">
+
+    <main>
+
+        <div class="results">
+            <h1>Results:</h1>
+            <h2>Price of the trip:</h2>
+            <p class="p_results" id="p_cost_result"></p>
+            <p class="p_results_per_person" id="p_cost_result_person"></p>
+            <h2>The tip:</h2>
+            <p class="p_results" id="p_tip_result"></p>
+            <p class="p_results_per_person" id="p_tip_result_person"></p>
+            <h2>Total price of the trip:</h2>
+            <p class="p_results" id="p_total_result"></p>
+            <p class="p_results_per_person" id="p_total_result_person"></p>
+        </div>
+
+        <div class="information">
+        <h1>Uber calculator to split costs</h1>
+        <form>
+            <p>Distance:<br>
+                <input type="number" id="input_km" min="0.001" max="999999.99" step="0.001" required> km </p>
+            <p>Price per km:<br>
+                <input type="number" id="input_price" min="0.01" max="999999.99" step="0.01" required> PLN </p>
+            <p>Class of the car<br>
+                <select id="select_car" onchange="fStartFee()" required>
+                <option>BASIC - max 4</option>
+                <option>COMFORT - max 4</option>
+                <option>PREMIUM - max 3</option>
+                <option>FAMILY - max 6</option>
+                <option>VIP - max 2</option>
+                </select><br>
+                <small id="small_info_fee">Start price: 3 PLN</small>
+            </p>
+            <p>Number of travellers:<br>
+                <input type="number" id="input_people" min="1" max="6" step="1" required> traveller
+            </p>
+            <p>Service rate
+                <select id="select_bonus" onchange="fRate()">
+                    <option>1/5 ☆</option>
+                    <option>2/5 ☆☆</option>
+                    <option>3/5 ☆☆☆</option>
+                    <option>4/5 ☆☆☆☆</option>
+                    <option>5/5 ☆☆☆☆☆</option>
+                </select><br>
+                <small id="small_info_tip">Each ☆ +5% to the tip</small>
+            </p>
+            <p>Personal protection (COVID-19)<br>
+                <input type="checkbox" id="input_covid">
+                <small id="small_yes">YES (+5%)</small>
+            </p>
+            <p>Water/Sweets on the back seat<br>
+                <input type="checkbox" id="input_gift">
+                <small id="small_yes">YES (+3%)</small>
+            </p>
+            <button type="button" onclick="fCalculate()">
+            <p id="p_button">Calculate!</p></button>
+        </form>
+        </div>
+    </main>
+</body>
+</html>
